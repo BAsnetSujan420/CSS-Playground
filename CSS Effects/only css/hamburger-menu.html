@@ -29,7 +29,7 @@
         height: 80px;
         cursor: pointer;
         transition: all 0.5s ease-in-out;
-        border: 3px solid white;
+        /* border: 3px solid white; */
       }
 
       .menu-btn__burger,
@@ -54,6 +54,22 @@
         position: absolute;
         transform: translateY(16px);
       }
+
+      /*Open and Close Menu*/
+
+      .menu-btn.open .menu-btn__burger {
+        transform: translateX(-50px);
+        background: transparent;
+        box-shadow: none;
+      }
+
+      .menu-btn.open .menu-btn__burger::before {
+        transform: rotate(45deg) translate(35px, -35px);
+      }
+
+      .menu-btn.open .menu-btn__burger::after {
+        transform: rotate(-45deg) translate(35px, 35px);
+      }
     </style>
   </head>
 
@@ -61,5 +77,20 @@
     <div class="menu-btn">
       <div class="menu-btn__burger"></div>
     </div>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      let isOpen = false;
+
+      menuBtn.addEventListener("click", (e) => {
+        if (!isOpen) {
+          menuBtn.classList.add("open");
+          isOpen = true;
+        } else {
+          menuBtn.classList.remove("open");
+          isOpen = false;
+        }
+      });
+    </script>
   </body>
 </html>
