@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Popup Modal</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Fira Sans", sans-serif;
+      }
+
+      main {
+        text-align: center;
+        margin-top: 100px;
+      }
+
+      .popup {
+        display: none;
+      }
+
+      .popup-inner {
+        background: #fff;
+        padding: 2em 1em;
+        max-width: 768px;
+        border-radius: 1em;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .popup:target {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h1>My CSS Popup</h1>
+        <a href="#popup1" class="button">Open Popup 1</a>
+      </section>
+    </main>
+
+    <div class="popup" id="popup1">
+      <div class="popup-inner">
+        <h3>Popup 1</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad aliquid
+          quos vero maiores iste dicta blanditiis numquam dolor iure, velit
+          harum sed officiis explicabo pariatur vitae libero eius quam rerum.
+        </p>
+        <a href="#" class="button">Close Popup</a>
+      </div>
+    </div>
+  </body>
+</html>
