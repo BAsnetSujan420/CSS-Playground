@@ -58,3 +58,20 @@ body {
 .btn i {
   margin-right: 1rem;
 }
+
+/*Submenu*/
+
+.menu-item__sub {
+  background: var(--grey);
+  overflow: hidden;
+  transition: max-height 0.3s;
+}
+
+.menu-item__sub a {
+  display: block;
+  padding: 1rem 1.6rem;
+  color: white;
+  font-size: 0.9rem;
+  position: relative;
+  border-bottom: 2px solid var(--light-grey);
+}
