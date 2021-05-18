@@ -25,3 +25,28 @@ body {
   border-radius: 20px;
   overflow: hidden;
 }
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  height: 100%;
+  width: 100%;
+  background: #2196f3;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.card:hover::before {
+  transform: skewY(390deg);
+}
+
+.card::after {
+  content: "Philips";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 7.7rem;
+  color: rgba(0, 0, 0, 0.1);
+}
