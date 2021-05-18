@@ -1,0 +1,36 @@
+:root {
+  --blue: #3498db;
+  --dark-blue: #2980b9;
+  --background: #081118;
+  --grey: #333;
+  --light-grey: #3b3b3b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--background);
+}
+
+.menu {
+  width: 20rem;
+  border-radius: 0.2rem;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu-item {
+  list-style: none;
+  border-top: 1px solid var(--dark-blue);
+}
