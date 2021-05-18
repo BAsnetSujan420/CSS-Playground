@@ -91,3 +91,20 @@ body {
   font-size: 1.5rem;
   color: #fff;
 }
+
+.card .content .buy {
+  position: relative;
+  padding: 10px 30px;
+  margin-top: 8px;
+  color: #fff;
+  text-decoration: none;
+  background: #2196f3;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transform: 0.5s;
+}
+
+.content .buy:hover {
+  transform: scale(0.9);
+}
