@@ -70,5 +70,37 @@ body {
   position: relative;
   width: 50%;
   padding: 10px 20px 20px 40px;
-  transition: 0.5s;
+  visibility: hidden;
+  transition: 0.2s;
+}
+
+.card:hover .content {
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.card .content h2 {
+  color: #fff;
+  font-size: 2em;
+  line-height: 1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5em;
+}
+
+.card .content p {
+  color: #fff;
+}
+
+.card .content a {
+  position: relative;
+  color: #111;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #fff;
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: bold;
+  cursor: pointer;
 }
