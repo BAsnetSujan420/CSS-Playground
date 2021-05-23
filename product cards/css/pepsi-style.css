@@ -104,3 +104,27 @@ body {
   font-weight: bold;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: auto;
+    max-width: 350px;
+    align-items: flex-start;
+  }
+
+  .card:hover {
+    height: 550px;
+  }
+
+  .card .content {
+    width: 100%;
+    left: 0;
+    padding: 20px;
+  }
+
+  .card:hover img {
+    top: 70%;
+    left: 66%;
+    height: 300px;
+  }
+}
