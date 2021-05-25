@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: consolas;
+}
+
+.container {
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .card {
+  position: relative;
+}
+
+.container .card .face {
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.container .card .face img {
+  width: 300px;
+  height: 100px;
+}
