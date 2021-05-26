@@ -97,4 +97,14 @@
   height: 100px;
   background: #fff;
   transform-origin: bottom right;
+  animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
 }
