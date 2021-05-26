@@ -38,6 +38,16 @@
   );
   background-size: 120px;
   transform: translateY(-50%);
+  animation: animateRoad 1s linear infinite;
+}
+
+@keyframes animateRoad {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -120px;
+  }
 }
 
 .infinite::after {
