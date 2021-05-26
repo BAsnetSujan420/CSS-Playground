@@ -79,6 +79,16 @@
   align-items: center;
   -webkit-box-reflect: below 10px
     linear-gradient(transparent, transparent, #0004);
+  animation: animateBox 1s linear infinite;
+}
+
+@keyframes animateBox {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100px);
+  }
 }
 
 .square {
@@ -86,4 +96,5 @@
   width: 100px;
   height: 100px;
   background: #fff;
+  transform-origin: bottom right;
 }
