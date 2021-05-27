@@ -53,8 +53,17 @@
   background: url("../images/bg.png");
   background-size: 1500px;
   background-repeat: repeat-x;
+  animation: animateBg 25s linear infinite;
 }
 
+@keyframes animateBg {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1500px;
+  }
+}
 .car1 {
   position: absolute;
   left: 0;
