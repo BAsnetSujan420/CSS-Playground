@@ -7,6 +7,7 @@
 .scene {
   position: relative;
   height: 100vh;
+  overflow-x: hidden;
   background: linear-gradient(#a6d8ff, #fff, #fff);
 }
 
@@ -70,5 +71,24 @@
   90%,
   100% {
     transform: translateX(calc(100vw + 150px));
+  }
+}
+
+.car2 {
+  position: absolute;
+  right: -200px;
+  bottom: 50px;
+  max-width: 200px;
+  z-index: 9;
+  animation: car2 12s linear infinite;
+}
+
+@keyframes car2 {
+  0% {
+    transform: translateX(0) rotateY(180deg);
+  }
+  90%,
+  100% {
+    transform: translateX(calc(-100vw - 200px)) rotateY(180deg);
   }
 }
