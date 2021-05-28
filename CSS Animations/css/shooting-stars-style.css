@@ -40,6 +40,7 @@ span {
   border-radius: 50%;
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
     0 0 0 8px rgba(255, 255, 255, 0.1), 0 0 20px rgba(255, 255, 255, 1);
+  animation: animate 3s linear infinite;
 }
 
 span::before {
@@ -50,4 +51,18 @@ span::before {
   height: 1px;
   background: linear-gradient(90deg, #fff, transparent);
   transform: translateY(-50%);
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(315deg) translateX(0);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(315deg) translateX(-1000px);
+    opacity: 0;
+  }
 }
