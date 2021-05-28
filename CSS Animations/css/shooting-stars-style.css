@@ -17,4 +17,15 @@ section {
   background: url("../images/bg2.jpg");
   background-position-x: center;
   background-size: cover;
+  animation: animateBg 50s linear infinite;
+}
+
+@keyframes animateBg {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
 }
