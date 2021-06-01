@@ -121,4 +121,25 @@ body {
   height: 120px;
   background: #fff;
   border-radius: 50%;
+  animation: animate 5s linear infinite;
+  opacity: 0;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-150px) scaleX(5);
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-300px) scaleX(10);
+  }
 }
