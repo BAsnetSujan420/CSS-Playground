@@ -43,4 +43,29 @@ body {
   height: 50px;
   background: linear-gradient(to left, #f9f9f9, #d9d9d9);
   border-radius: 50%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.tea {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#c57e65, #e28462);
+  border-radius: 50%;
+}
+
+.handle {
+  position: absolute;
+  right: -70px;
+  top: 35px;
+  width: 160px;
+  height: 180px;
+  border: 25px solid #dcdcdc;
+  border-left: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  transform: rotate(42deg);
+  border-radius: 50%;
 }
