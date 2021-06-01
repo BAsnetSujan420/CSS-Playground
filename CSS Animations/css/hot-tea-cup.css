@@ -104,3 +104,21 @@ body {
   background: radial-gradient(rgba(0, 0, 0, 0.2) 25%, transparent, transparent);
   border-radius: 50%;
 }
+
+.vapour {
+  position: relative;
+  display: flex;
+  z-index: 1;
+  padding: 0 20px;
+}
+
+.vapour span {
+  position: relative;
+  bottom: 50px;
+  display: block;
+  margin: 0 2px 50px;
+  min-width: 8px;
+  height: 120px;
+  background: #fff;
+  border-radius: 50%;
+}
