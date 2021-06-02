@@ -29,6 +29,9 @@ body {
   border: 15px solid #fff;
   border-radius: 50%;
   animation: animate 6s ease-in-out infinite;
+  box-shadow: 0 10px 0 #efebed,
+  inset 0 10px 0 #ececec;
+  animation-delay: calc(-1s * var(--i));
 }
 
 @keyframes animate {
