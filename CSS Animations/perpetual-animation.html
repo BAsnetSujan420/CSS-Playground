@@ -31,6 +31,19 @@
         border-bottom: 20px solid #06c8f0;
         border-right: 20px solid #06c8f0;
         transform: rotate(45deg);
+        animation: animate 4s ease-in-out infinite;
+      }
+
+      @keyframes animate {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(90deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
       }
 
       .container .loader .ball {
@@ -40,6 +53,19 @@
         width: 100%;
         height: 100%;
         border-radius: 50%;
+        animation: animateBall 4s ease-in-out infinite;
+      }
+
+      @keyframes animateBall {
+        0% {
+          transform: rotate(0deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
       }
 
       .container .loader .ball::before {
