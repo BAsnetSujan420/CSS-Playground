@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pepsi | Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="sec">
+      <header>
+        <a href="#"><img src="images/logo.png" alt="logo" class="logo" /></a>
+        <div class="toggleMenu" onclick="menuToggle()"></div>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textBox">
+          <h2>That's What<br /><span>I like</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed fugit
+            corporis voluptatum facere ab asperiores vitae impedit tenetur quia
+            incidunt, expedita quaerat officiis modi hic eaque perferendis
+            porro! Quo, hic.
+          </p>
+          <a href="#">View All Products</a>
+        </div>
+        <div class="imgBox">
+          <img src="images/pepsi001.png" alt="product" class="pepsi" />
+        </div>
+      </div>
+      <ul class="thumbnail">
+        <li>
+          <img
+            src="images/pepsi001.png"
+            alt="product thumbnail"
+            onclick="imgSlider('images/pepsi001.png');
+            changeBgColor('#0062be')"
+          />
+        </li>
+        <li>
+          <img
+            src="images/pepsi002.png"
+            alt="product thumbnail"
+            onclick="imgSlider('images/pepsi002.png');
+            changeBgColor('#e60c2c')"
+          />
+        </li>
+        <li>
+          <img
+            src="images/pepsi003.png"
+            alt="product thumbnail"
+            onclick="imgSlider('images/pepsi003.png');
+            changeBgColor('#1e1e1e')"
+          />
+        </li>
+      </ul>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="images/facebook.png" alt="facebook" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/twitter.png" alt="twitter" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/instagram.png" alt="instagram" /></a>
+        </li>
+      </ul>
+    </section>
+    <script type="text/javascript">
+      function imgSlider(imgSrc) {
+        document.querySelector(".pepsi").src = imgSrc;
+      }
+
+      function changeBgColor(color) {
+        const sec = document.querySelector(".sec");
+        sec.style.background = color;
+      }
+
+      function menuToggle() {
+        const toggleMenu = document.querySelector(".toggleMenu");
+        const navigation = document.querySelector(".navigation");
+        toggleMenu.classList.toggle("active");
+        navigation.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
