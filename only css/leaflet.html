@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leaflet</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 640px;
+        height: 360px;
+        display: flex;
+      }
+
+      ul li {
+        list-style: none;
+        width: 25%;
+        background-image: url("https://images.unsplash.com/photo-1589838017489-9198a27bd040?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8");
+        background-size: cover;
+        height: 100%;
+        transition: 0.5s;
+      }
+
+      ul:hover li:nth-child(odd) {
+        transform: skewY(15deg);
+        box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+      }
+
+      ul:hover li:nth-child(even) {
+        transform: skewY(-15deg);
+        box-shadow: inset 20px 0 50px rgba(0, 0, 0, 0.5);
+      }
+
+      ul li:nth-child(1) {
+        background-position: 0;
+      }
+
+      ul li:nth-child(2) {
+        background-position: -160px;
+      }
+
+      ul li:nth-child(3) {
+        background-position: calc(-160px * 2);
+      }
+
+      ul li:nth-child(4) {
+        background-position: cals(-160px * 3);
+      }
+    </style>
+  </head>
+
+  <body>
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </body>
+</html>
