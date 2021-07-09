@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruits | Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="bg"></div>
+      <header>
+        <a href="" class="logo">Fruits</a>
+        <div class="toggle" onclick="menuToggle()"></div>
+        <ul class="navigation">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">What's New</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </header>
+
+      <div class="content">
+        <div class="textBox">
+          <h2>Eat Fresh Everyday</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cum
+            officia magnam cumque eum. Totam in odio esse debitis assumenda
+            veritatis asperiores a, dolorum illum error architecto corrupti quam
+            reprehenderit id repudiandae. Ipsam, corrupti possimus.
+          </p>
+          <a href="#">Learn More</a>
+        </div>
+        <div class="imgBox">
+          <img src="images/apple.png" alt="" class="fruit" />
+        </div>
+      </div>
+
+      <ul class="thumbnail">
+        <li data-text="Apple" class="active">
+          <img
+            src="images/apple.png"
+            onclick="imgSlider('images/apple.png');changeBgColor('#fc4a55')"
+          />
+        </li>
+        <li data-text="Dragonfruit">
+          <img
+            src="images/dragonFruits.png"
+            onclick="imgSlider('images/dragonFruits.png');changeBgColor('#fb6cb2')"
+          />
+        </li>
+        <li data-text="Mango">
+          <img
+            src="images/mango.png"
+            onclick="imgSlider('images/mango.png');changeBgColor('#ffcc02')"
+          />
+        </li>
+        <li data-text="Pineapple">
+          <img
+            src="images/pineApple.png"
+            onclick="imgSlider('images/pineApple.png');changeBgColor('#ffb42b')"
+          />
+        </li>
+        <li data-text="Watermelon">
+          <img
+            src="images/watermelon.png"
+            onclick="imgSlider('images/watermelon.png');changeBgColor('#92ba3c')"
+          />
+        </li>
+      </ul>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="images/facebook.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/twitter.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/instagram.png" alt="" /></a>
+        </li>
+      </ul>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
