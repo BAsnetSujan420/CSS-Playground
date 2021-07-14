@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login-resigtration.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="user logInBox">
+          <div class="imgBox"><img src="img/login.jpg" alt="" /></div>
+          <div class="formBox">
+            <form>
+              <h2>Log In</h2>
+              <input type="text" name="name" placeholder="Username" />
+              <input type="password" name="password" placeholder="Password" />
+              <input type="submit" name="submit" value="Login" />
+              <p class="signup">
+                Don't have an account?
+                <a href="#" onclick="toggleForm();"> Sign Up</a>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <div class="user signUpBox">
+          <div class="formBox">
+            <form>
+              <h2>Create an account</h2>
+              <input type="text" name="name" placeholder="Username" />
+              <input type="text" name="address" placeholder="Address" />
+              <input
+                type="password"
+                name="password1"
+                placeholder="Create Password"
+              />
+              <input
+                type="password"
+                name="password2"
+                placeholder="Confirm Password"
+              />
+              <input type="submit" name="submit" value="Sign Up" />
+              <p class="signup">
+                Already have an account?
+                <a href="#" onclick="toggleForm();"> Sign In</a>
+              </p>
+            </form>
+          </div>
+          <div class="imgBox"><img src="img/signup.jpg" alt="" /></div>
+        </div>
+      </div>
+    </section>
+    <script>
+      function toggleForm() {
+        let container = document.querySelector(".container");
+        container.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
