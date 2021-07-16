@@ -121,7 +121,7 @@ section .container.active .signUpBox {
 }
 
 section .container .signUpBox .formBox {
-  left: -100%;
+  right: 100%;
 }
 
 section .container.active .signUpBox .formBox {
@@ -129,7 +129,7 @@ section .container.active .signUpBox .formBox {
 }
 
 section .container .signUpBox .imgBox {
-  left: 100%;
+  right: -100%;
 }
 
 section .container.active .signUpBox .imgBox {
@@ -141,7 +141,7 @@ section .container .logInBox .formBox {
 }
 
 section .container.active .logInBox .formBox {
-  left: 100%;
+  right: 100%;
 }
 
 section .container .logInBox .imgBox {
@@ -149,7 +149,7 @@ section .container .logInBox .imgBox {
 }
 
 section .container.active .logInBox .imgBox {
-  left: -100%;
+  right: -100%;
 }
 
 @media (max-width: 991px) {
