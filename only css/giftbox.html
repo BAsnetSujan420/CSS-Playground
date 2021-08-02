@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giftbox</title>
+    <style>
+      body {
+        background: #333;
+        padding-top: 150px;
+      }
+
+      .present {
+        width: 410px;
+        margin: 0 auto;
+      }
+
+      .box,
+      .lid {
+        background: radial-gradient(white 15%, transparent 15.1%),
+          rgb(240, 58, 58);
+        background-position: 0 0, 25px 25px;
+        background-size: 50px 50px;
+        position: relative;
+        margin: 0 auto;
+      }
+
+      .box {
+        width: 400px;
+        height: 250px;
+      }
+
+      .lid {
+        width: 400px;
+        height: 70px;
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        padding: 0 2px;
+        background-color: rgb(216, 52, 52);
+        top: 0;
+        left: 0;
+        transition: all ease-out 0.5s;
+      }
+
+      .box span,
+      .lid span {
+        position: absolute;
+        display: block;
+        background-color: rgba(235, 199, 0, 0.8);
+        box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+      }
+
+      .box span:first-child {
+        width: 100%;
+        height: 60px;
+        top: 80px;
+      }
+      .box span:last-child,
+      .lid span {
+        height: 100%;
+        width: 60px;
+        left: 170px;
+      }
+
+      .lid span {
+        left: 172px;
+      }
+
+      .promo {
+        color: #fff;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-align: center;
+        position: relative;
+        top: 10px;
+        height: 0px;
+        transition: all ease-in-out 0.7s;
+      }
+
+      .promo p {
+        font-size: 24px;
+        margin: 0;
+      }
+
+      .promo h2 {
+        font-size: 36px;
+        margin: 0;
+      }
+
+      .present:hover .lid {
+        top: -100px;
+        transform: rotateZ(10deg);
+        left: 10px;
+      }
+
+      .present:hover .promo {
+        top: -80px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="present">
+      <div class="lid">
+        <span></span>
+      </div>
+      <div class="promo">
+        <p>Wow</p>
+        <h2>Your New Laptop!!!</h2>
+      </div>
+      <div class="box">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </body>
+</html>
