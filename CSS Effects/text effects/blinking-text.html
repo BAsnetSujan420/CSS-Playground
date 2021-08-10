@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 2rem;
+      }
+
+      .blink {
+        animation: blink 2s infinite;
+      }
+
+      @keyframes blink {
+        0% {
+          opacity: 1;
+        }
+
+        49% {
+          color: purple;
+        }
+        50% {
+          opacity: 0;
+          transform: scale(1.2);
+        }
+        51% {
+          opacity: 0;
+          transform: scale(0);
+        }
+
+        60% {
+          color: transparent;
+        }
+        99% {
+          color: transparent;
+        }
+        100% {
+          color: purple;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p><span class="blink">blink </span>&nbsp;-182</p>
+  </body>
+</html>
